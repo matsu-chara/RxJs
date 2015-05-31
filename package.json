@@ -1,0 +1,23 @@
+{
+  "name": "prj",
+  "version": "0.0.0",
+  "bin": "cli",
+  "description": "mizchi's minimum project",
+  "scripts": {
+    "watch": "$(npm bin)/watchify -v -t babelify --extension='.es6.js' -o bundle.js index.es6.js",
+    "build": "$(npm bin)/browserify -t babelify --extension='.es6.js' -o bundle.js index.es6.js",
+    "open": "open -a /Applications/Google\\ Chrome.app 'http://localhost:9966'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^6.1.0",
+    "browserify": "^9.0.8",
+    "coffeeify": "^1.0.0",
+    "watchify": "^3.1.1"
+  },
+  "dependencies": {
+    "rx": "^2.5.2"
+  }
+}
